@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script src="/libs/jquery-1.9.1.js"></script>
+	<link rel="stylesheet" type="text/css" href="reset.css">
+	<link rel="stylesheet" type="text/css" href="jquery.parascroll.css">
+	<style>
+		body { color: #FFFFFF; font-family: "Helvetica Neue",helvetica,arial,verdana,sans-serif; font-size: 1.2em; }
+
+		/* Specific backgrounds */
+		#one .scrollable 	{ background: url(images/pelephant.jpg) no-repeat 50% 50%; width: 100%; height: 860px; }
+		#two .scrollable 	{ background: url(images/ptucan.jpg) no-repeat 35% 15%; width: 100%; height: 740px; }
+		#three .scrollable 	{ background: url(images/ptiger.jpg) no-repeat 50% 25%; width: 100%; height: 820px; }
+
+		/* Specific sizes for our example - you ned to set these for yours */
+		.parascroll 		{ min-height: 512px; }
+		.paraContent 		{ padding: 1em 2em; }
+	</style>
+</head>
+<body>
+
+<div>
+	<ul class="scrollList">
+		<li id="three" class="text-shadow parascroll">
+			<div class="scrollable"></div>
+			<div class="paraContent">
+				<h2>Fierce</h2>
+				<p>Salient and eye-catching</p>
+			</div>
+		</li>
+		<li class="inBetween">
+			Content goes here
+		</li>
+		<li id="one" class="parascroll">
+			<div class="scrollable"></div>
+			<div class="paraContent">
+				<h2>Bold</h2>
+				<p>Smooth scrolling</p>
+			</div>
+		</li>
+		<li class="inBetween">
+			Yet more content<br/>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod<br/>
+			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,<br/>
+			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo<br/>
+			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse<br/>
+			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non<br/>
+			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+		</li>
+		<li id="two" class="text-shadow parascroll">
+			<div class="scrollable"></div>
+			<div class="paraContent">
+				<h2>Delicate</h2>
+				<p>Fine-grained control</p>
+			</div>
+		</li>
+	</ul>
+</div>
+
+<script src="jquery.parascroll.js"></script>
+<script>
+	$(function(){
+		$('.parascroll').parascroll();
+	})
+</script>
+
+</body>
+</html>
